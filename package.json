@@ -1,0 +1,20 @@
+{
+  "name": "agent-identity-api",
+  "version": "1.0.0",
+  "description": "REST API wrapper for ERC-8004 agent identity registration and lookup",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
