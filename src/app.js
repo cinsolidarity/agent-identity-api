@@ -18,8 +18,8 @@ export function createApp() {
     res.json({ status: 'ok' });
   });
 
-  app.post('/register', registerRoute);
-  app.get('/lookup', lookupRoute);
+  app.use('/register', registerRoute);
+  app.use('/lookup', lookupRoute);
 
   // 404 for any unmatched route
   app.use((_req, res) => {
